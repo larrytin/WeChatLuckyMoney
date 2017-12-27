@@ -37,7 +37,8 @@
 }
 
 - (void)testExample {
-  [_app.cells.firstMatch tap];
+  XCUIElement *xcuiElement = [_app.cells childrenMatchingType:XCUIElementTypeStaticText].firstMatch;
+  [xcuiElement tap];
 
   XCUIElement *element = [self findRedEnvelop];
   [element tap];

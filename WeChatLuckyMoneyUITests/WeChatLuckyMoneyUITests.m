@@ -37,30 +37,36 @@
 }
 
 - (void)testExample {
-  XCUIElement *xcuiElement = [_app.cells childrenMatchingType:XCUIElementTypeStaticText].firstMatch;
+  XCUIElement *xcuiElement = _app.tables.firstMatch.staticTexts.firstMatch;
+//  XCUIElement *xcuiElement = [_app.tables.firstMatch.cells elementBoundByIndex:2];
   [xcuiElement tap];
 
-  XCUIElement *element = [self findRedEnvelop];
+  XCUIElement *element = [self waitUntilRedEnvelopExists];
   [element tap];
 
   XCUIElement *button = [_app.buttons containingPredicate:[NSPredicate predicateWithFormat:@"label = %@", @"拆红包"]].element;
   if (button.exists) {
     [button tap];
   }
-
+  
   NSLog(@"%@", _app.debugDescription);
 }
 
-- (XCUIElement *)findRedEnvelop {
-  XCUIElement *element = [_app.cells containingPredicate:[NSPredicate predicateWithFormat:@"label CONTAINS %@", @"发来了微信红包"]].element;
+- (XCUIElement *)waitUntilRedEnvelopExists {
+  XCUIElement *element = [self findRedEnvelop];
   while (!element.exists) {
 //    if ([NSDate timeIntervalSinceReferenceDate] - startTime > timeout) {
 //      XCTFail(@"Timed out waiting for element to exist");
 //      return;
 //    }
     CFRunLoopRunInMode(kCFRunLoopDefaultMode, 0.1, false);
+    element = [self findRedEnvelop];
   }
   return element;
+}
+
+- (XCUIElement *)findRedEnvelop {
+  return [_app.cells containingPredicate:[NSPredicate predicateWithFormat:@"label CONTAINS %@", @"发来了微信红包"]].element;
 }
 
 @end

@@ -10,6 +10,7 @@
 		61FBC0CCD4B266A29F9E77B1 /* WeChatLuckyMoneyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FBCC7EAD8C8947F51DBD35 /* WeChatLuckyMoneyUITests.m */; };
 		61FBC0D62E6BA336CDE72094 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61FBC066692F87EF14D8C1AE /* LaunchScreen.storyboard */; };
 		61FBC32AA6F5DB8E40F82A3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FBC767ABBFF7D18E6D51C9 /* main.m */; };
+		61FBC40E92AEE8ED583984A7 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 61FBCEAF4EFB8D4E20815C26 /* README.md */; };
 		61FBCA39858C25FC0050B040 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FBC29F6179A5CA34842E59 /* AppDelegate.m */; };
 		61FBCD0252AF89E11B9081FC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FBC714CC3E349198CAC0E5 /* ViewController.m */; };
 		61FBCDE45EB00E6DA9F7C229 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61FBC066AD624FC22866828C /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 		61FBCB5F9695C1A713E492E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		61FBCC7EAD8C8947F51DBD35 /* WeChatLuckyMoneyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeChatLuckyMoneyUITests.m; sourceTree = "<group>"; };
 		61FBCDE7E56C3028D147740C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		61FBCEAF4EFB8D4E20815C26 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		61FBCEFC59AB798D0C4EFFE2 /* WeChatLuckyMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChatLuckyMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 				61FBC39990D8084918C3DA8E /* Products */,
 				61FBCFA1E1641974CDD5D660 /* WeChatLuckyMoney */,
 				61FBC5385CE2BB10B472B74B /* WeChatLuckyMoneyUITests */,
+				61FBCEAF4EFB8D4E20815C26 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,6 +206,7 @@
 				61FBC32AA6F5DB8E40F82A3A /* main.m in Sources */,
 				61FBCA39858C25FC0050B040 /* AppDelegate.m in Sources */,
 				61FBCD0252AF89E11B9081FC /* ViewController.m in Sources */,
+				61FBC40E92AEE8ED583984A7 /* README.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
